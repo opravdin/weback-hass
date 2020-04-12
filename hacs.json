@@ -2,5 +2,6 @@
     "name": "Weback cloud integration",
     "content_in_root": false,
     "render_readme": true,
-    "domains": ["weback"]
+    "domains": ["weback"],
+    "hide_default_branch": true
   }
