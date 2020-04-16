@@ -3,7 +3,7 @@ Based on my [package](https://github.com/opravdin/weback-unofficial).
 This thing is in early development status and currently support just a limited amount of devices - only robot vacuums (probably only without VSLAM camera tracking).
 
 ## Configuration
-If you use your phone number as username, type it like +{region}-{number}
+If you use your phone number as username, type it like +{region}-{number}. Email login is not working for now
 ```yaml
 weback:
   - username: +7-1234567890
@@ -11,7 +11,13 @@ weback:
 ```
 
 ## Supported devices
-This integration tested only on Neatsvor X500. It supports any device that mentioned as "_CLEAN_ROBOT" in Amazon's API. You can check it this way:  
+Tested on:
+* Neatsvor X500
+* Neatsvor V392
+* Tesvor X500
+* Concept VR3000  
+
+This integration supports any device that mentioned as "_CLEAN_ROBOT" in Amazon's API. You can check it this way:  
 ```
 pip install weback-unofficial
 ```
