@@ -6,7 +6,7 @@ This thing is in early development status and currently support just a limited a
 If you use your phone number as username, type it like +{region}-{number}. Email login is not working for now
 ```yaml
 weback:
-  - username: +7-1234567890
+    username: +7-1234567890
     password: <password>
 ```
 
