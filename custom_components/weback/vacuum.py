@@ -15,7 +15,7 @@ from homeassistant.components.vacuum import (
     SUPPORT_STOP,
     SUPPORT_TURN_OFF,
     SUPPORT_TURN_ON,
-    VacuumDevice,
+    VacuumEntity,
 )
 from homeassistant.helpers.icon import icon_for_battery_level
 from homeassistant.const import CONF_SCAN_INTERVAL
@@ -49,7 +49,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     add_entities(vacuums, True)
 
 
-class WebackVacuum(VacuumDevice):
+class WebackVacuum(VacuumEntity):
     """Weback Vacuums such as Neatsvor X500."""
 
     def __init__(self, device: wb_vacuum.CleanRobot, scan_interval: datetime.timedelta):
