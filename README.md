@@ -4,9 +4,11 @@ This thing is in early development status and currently support just a limited a
 
 ## Configuration
 If you use your phone number as username, type it like +{region}-{number}. Email login is not working for now
+
+example telephone number: (+7)0123456789
 ```yaml
 weback:
-    username: +7-1234567890
+    username: +7-0123456789
     password: <password>
 ```
 
