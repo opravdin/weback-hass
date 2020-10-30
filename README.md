@@ -18,6 +18,7 @@ Tested on:
 * Neatsvor V392
 * Tesvor X500
 * Concept VR3000  
+* Tesvor S6 (with map saving feature!)
 
 This integration supports any device that mentioned as "_CLEAN_ROBOT" in Amazon's API. You can check it this way:  
 ```
@@ -33,6 +34,9 @@ for device in devices:
     description = client.get_device_description(device["Thing_Name"])
     print(f"Device type is {description.get('thingTypeName')}")
 ```
+## Zone cleaning
+Zone cleaning setting is not that straightforwart, but you could set it with custom command feature. Check [this](https://github.com/opravdin/weback-unofficial/issues/7) discussion for more details.
+You should manually send coordinates of your zone to vacuum cleaner. 
 
 ## Custom commands
 Currently you can publish message to device's MQTT topic.  
