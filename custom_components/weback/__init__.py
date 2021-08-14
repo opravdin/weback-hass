@@ -31,7 +31,7 @@ CONFIG_SCHEMA = vol.Schema(
 
 WEBACK_DEVICES = "weback_devices"
 
-SUPPORTED_DEVICES = ["_CLEAN_ROBOT"]
+SUPPORTED_DEVICES = ["_CLEAN_ROBOT", "_CLEAN_ROBOT_VSLAM_YW"]
 
 
 def setup(hass, config):
